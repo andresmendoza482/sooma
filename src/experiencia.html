@@ -4,17 +4,17 @@
         <!-- Meta tags -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="" content="">
-        <meta name="" content="">
-        <meta name="" content="">
-        <meta name="" content="">
-        <meta name="" content="">
+        <meta name="autor" content="">
+        <meta name="copyright" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="theme-color" content="">
         <!-- Open Graph protocol -->
-        <meta property="og:" content="">
-        <meta property="og:" content="">
-        <meta property="og:" content="">
-        <meta property="og:" content="">
-        <meta property="og:" content="">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:type" content="">
+        <meta property="og:url" content="">
+        <meta property="og:img" content="">
         <!-- Link tags -->
         <link rel="stylesheet" type="text/css" href="./origin/css/styles.css">
         <link rel="canonical" href="">
@@ -26,75 +26,67 @@
     <body>
         <noscript><h2>Es necesario que tengas habilitado JavaScript en tu navegador para acceder a esta página</h2></noscript>
         <div class="root">
-            <header class="">
-                <div class="">
-                    <a class="" href="#">
-                        <img class="" src="" title="Logo" alt="Logo">
-                    </a>
-                    <nav class="">
-                        <a class="" href="./sobre-mi.html">Sobre mí</a>
-                        <a class="" href="./experiencia.html">Experiencia</a>
-                        <a class="" href="./blog.html">Blog</a>
-                        <button class="">
-                            <img class="" src="./origin/multimedia/svg/moon.svg" title="Dark mode" alt="Dark mode">
-                        </button>
-                    </nav>
-                </div>
+            <header class="bg-neutral-950 p-4 w-full flex justify-between items-center">
+                <a class="" href="#">
+                    <img class="" src="" title="Logo" alt="Logo">
+                </a>
+                <nav class="flex justify-center items-center gap-4">
+                    <a class="text-slate-50" href="#">Sobre mí</a>
+                    <a class="text-slate-50" href="#">Experiencia</a>
+                    <a class="text-slate-50" href="#">Blog</a>
+                    <button class="w-10 h-10 flex justify-center items-center rounded-circle hover:bg-neutral-900">
+                        <img class="w-6" src="./origin/multimedia/svg/moon.svg" title="Dark mode" alt="Dark mode">
+                    </button>
+                </nav>
             </header>
-            <main class="">
-                <div class="">
+            <main class="py-20 bg-slate-50 dark:bg-neutral-950">
+                <div class="w-3/4 mx-auto md:w-8/12">
+                    <h1 class="text-center text-5xl font-bold mb-12 text-neutral-950 dark:text-slate-50">Experiencia.</h1>
+                    <p class="mb-12 text-lg text-neutral-950 dark:text-slate-50">Durante mi carrera como desarrollador web he tenido la oportunidad de 
+                        colaborar con algunas empresas, esta es una lista de ellas junto con el puesto que he 
+                        desempeñado y las tareas que he realizado.
+                    </p>
+                    <h2 class="text-3xl font-bold mt-8 mb-2 text-neutral-950 dark:text-slate-50">Pemex.</h2>
+                    <p class="text-lg text-neutral-950 dark:text-slate-50">febrero 2024 - Actualidad.</p>
+                    <img class="my-5 mx-auto w-48 h-44 rounded-xl" src="./origin/multimedia/img/pemex.png" title="Pemex" alt="Pemex">
+                    <p class="mb-5 text-lg text-neutral-950 dark:text-slate-50"><span class="font-bold">Puesto: </span>Desarrollador Frontend/Residente.</p>
+                    <span class="font-bold text-lg">Tareas desempeñadas:</span>
+                    <ul class="mb-5 list-disc">
+                        <li class="mb-1 text-lg text-neutral-950 dark:text-slate-50">Diseño y desarrollo de un sistema web para el departamento de 
+                            subgerencia regional de integración y desarrollo humano norte de Pemex utilizando 
+                            HTML, CSS, Vanilla JavaScript y Tailwind CSS.
+                        </li>
+                        <li class="mb-1 text-lg text-neutral-950 dark:text-slate-50">Control de versiones del sistema mediante el uso de Git 
+                            y la plataforma Github.
+                        </li>
+                        <li class="mb-1 text-lg text-neutral-950 dark:text-slate-50">Colaboracón en el diseño y modelado de bases de datos relacionales.</li>
+                    </ul>
                     <div class="">
-                        <h1 class="">Experiencia.</h1>
-                        <p class="">Durante mi carrera como desarrollador web he tenido la oportunidad de 
-                            colaborar con algunas empresas, esta es una lista de ellas junto con el puesto que he 
-                            desempeñado y las tareas que he realizado.
-                        </p>
-                    </div>
-                    <div class="">
-                        <h2 class="">Pemex.</h2>
-                        <p class="">febrero 2024 - Actualidad.</p>
-                        <img class="" src="./origin/multimedia/img/pemex.png" title="Pemex" alt="Pemex">
-                        <p class=""><span class="section__span">Puesto: </span>Desarrollador Frontend/Residente.</p>
-                        <span class="">Tareas desempeñadas:</span>
-                        <ul class="">
-                            <li class="">Diseño y desarrollo de un sistema web para el departamento de 
-                                subgerencia regional de integración y desarrollo humano norte de Pemex utilizando 
-                                HTML, CSS y Vanilla JavaScript.
-                            </li>
-                            <li class="">Control de versiones del sistema mediante el uso de Git 
-                                y la plataforma Github.
-                            </li>
-                            <li class="">Colaboracón en el diseño y modelado de bases de datos relacionales.</li>
-                        </ul>
-                    </div>
-                    <div class="">
-                        <h2 class="">Grupo garel.</h2>
-                        <p class="">septiembre 2023 - febrero 2024.</p>
-                        <img class="" src="./origin/multimedia/img/grupo-garel.jpg" title="Grupo garel" alt="Grupo garel">
-                        <p class=""><span class="section__span">Puesto: </span>Prácticante.</p>
-                        <span class="">Tareas desempeñadas:</span>
-                        <ul class="">
-                            <li class="">Soporte y mantenimiento de equipo de computo.</li>
-                            <li class="">Análisis y monitoreo de redes.</li>
+                        <h2 class="text-3xl font-bold mt-12 mb-2 text-neutral-950 dark:text-slate-50">Grupo garel.</h2>
+                        <p class="text-lg text-neutral-950 dark:text-slate-50">septiembre 2023 - febrero 2024.</p>
+                        <img class="my-5 mx-auto w-48 h-44 rounded-xl" src="./origin/multimedia/img/grupo-garel.jpg" title="Grupo garel" alt="Grupo garel">
+                        <p class="mb-5 text-lg text-neutral-950 dark:text-slate-50"><span class="font-bold">Puesto: </span>Prácticante.</p>
+                        <span class="font-bold text-lg">Tareas desempeñadas:</span>
+                        <ul class="mb-5 list-disc">
+                            <li class="mb-1 text-lg text-neutral-950 dark:text-slate-50">Soporte y mantenimiento de equipo de computo.</li>
+                            <li class="mb-1 text-lg text-neutral-950 dark:text-slate-50">Análisis y monitoreo de redes.</li>
                         </ul>
                     </div>
                 </div>
             </main>
-            <footer class="">
-                <div class="">
-                    <nav class="">
-                        <a class="" href="https://www.instagram.com/soomadev">
-                            <img class="" src="./origin/multimedia/svg/Instagram_dark.svg" title="Instagram" alt="Instagram">
-                        </a>
-                        <a class="" href="mailto:ramirezmendoza482@gmail.com">
-                            <img class="" src="./origin/multimedia/svg/gmail.svg" title="Gmail" alt="Gmail">
-                        </a>
-                        <a class="" href="https://github.com/JSooma">
-                            <img class="" src="./origin/multimedia/svg/github.svg" title="Github" alt="Github">
-                        </a>
-                    </nav>
-                    <p class="">Created by Sooma.</p>
-                </div>
+            <footer class="bg-neutral-950 w-full p-6 flex flex-col gap-4">
+                <nav class="flex justify-center gap-24">
+                    <a class="w-10 h-10 flex justify-center items-center rounded-circle hover:bg-neutral-900" href="https://www.instagram.com/soomadev" target="_blank">
+                        <img class="w-6" src="./origin/multimedia/svg/Instagram_dark.svg" title="Instagram" alt="Instagram">
+                    </a>
+                    <a class="w-10 h-10 flex justify-center items-center rounded-circle hover:bg-neutral-900" href="mailto:ramirezmendoza482@gmail.com" target="_blank">
+                        <img class="w-6" src="./origin/multimedia/svg/gmail.svg" title="Gmail" alt="Gmail">
+                    </a>
+                    <a class="w-10 h-10 flex justify-center items-center rounded-circle hover:bg-neutral-900" href="https://github.com/JSooma" target="_blank">
+                        <img class="w-6" src="./origin/multimedia/svg/github.svg" title="Github" alt="Github">
+                    </a>
+                </nav>
+                <p class="text-slate-50 text-center">Created by Sooma.</p>
             </footer>
         </div>
     </body>
