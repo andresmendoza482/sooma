@@ -4,150 +4,165 @@
         <!-- Meta tags -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="autor" content="">
-        <meta name="copyright" content="">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        <meta name="theme-color" content="">
+        <meta name="autor" content="Sooma">
+        <meta name="copyright" content="Created by Sooma">
+        <meta name="description" content="Mi educación, stack y un poco sobre la persona detrás del desarrollador">
+        <meta name="keywords" content="sooma, sobre mí">
+        <meta name="theme-color" content="#111">
         <!-- Open Graph protocol -->
-        <meta property="og:title" content="">
-        <meta property="og:description" content="">
-        <meta property="og:type" content="">
+        <meta property="og:title" content="Sobre mí">
+        <meta property="og:description" content="Mi educación, stack y un poco sobre la persona detrás del desarrollador">
+        <meta property="og:type" content="website">
         <meta property="og:url" content="">
         <meta property="og:img" content="">
         <!-- Link tags -->
         <link rel="stylesheet" type="text/css" href="./origin/css/styles.css">
         <link rel="canonical" href="">
-        <link rel="icon" href="">
-        <link rel="apple-touch-icon" href="">
+        <link rel="icon" href="./origin/multimedia/img/favicon.png">
+        <link rel="apple-touch-icon" href="./origin/multimedia/img/favicon.png">
         <script src="./origin/js/index.js" type="module" defer></script>
         <title>Sobre mí</title>
     </head>
     <body>
-        <noscript><h2>Es necesario que tengas habilitado JavaScript en tu navegador para acceder a esta página.</h2></noscript>
+        <noscript><h2>Es necesario que tengas habilitado JavaScript en tu navegador para acceder a esta página</h2></noscript>
         <div class="root">
-            <header class="bg-neutral-950 p-4 w-full flex justify-between items-center">
-                <a class="" href="#">
-                    <img class="" src="" title="Logo" alt="Logo">
+            <header class="header fixed top-0 left-0 z-30 bg-neutral-900 py-1 px-4 w-full flex justify-between items-center border-b border-b-neutral-600 md:static">
+                <a class="header__home" href="./index.html">
+                    <img class="header__logo w-20 h-20 md:w-16 md:h-16" src="./origin/multimedia/img/favicon.png" title="Sooma" alt="Sooma">
                 </a>
-                <nav class="flex justify-center items-center gap-4">
-                    <a class="text-slate-50" href="#">Sobre mí</a>
-                    <a class="text-slate-50" href="#">Experiencia</a>
-                    <a class="text-slate-50" href="#">Blog</a>
-                    <button class="w-10 h-10 flex justify-center items-center rounded-circle hover:bg-slate-900">
-                        <img class="w-6" src="./origin/multimedia/svg/moon.svg" title="Dark mode" alt="Dark mode">
+                <nav class="header__nav bg-neutral-900 fixed top-0 left-0 z-40 w-full h-screen flex flex-col justify-center items-center translate-x-full transition-transform md:relative md:flex-row md:gap-4 md:w-auto md:h-auto md:translate-x-0">
+                    <a class="header__a text-slate-50 p-8 text-4xl text-center w-full md:text-base md:p-0 md:w-auto" href="./sobre-mi.html">Sobre mí</a>
+                    <a class="header__a text-slate-50 p-8 text-4xl text-center w-full md:text-base md:p-0 md:w-auto" href="./experiencia.html">Experiencia</a>
+                    <a class="header__a text-slate-50 p-8 text-4xl text-center w-full md:text-base md:p-0 md:w-auto" href="./blog.html">Blog</a>
+                    <button class="header__btn-dark p-8 w-full flex justify-center items-center md:w-10 md:h-10 md:p-0 md:hover:bg-neutral-800">
+                        <img class="header__btn-icon w-8 md:w-6" title="Dark mode" alt="Dark mode">
                     </button>
                 </nav>
+                <button class="header__btn-hamburguer relative z-50 md:hidden hamburger hamburger--squeeze" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>
             </header>
-            <main class="">
+            <main class="py-20 bg-slate-50 dark:bg-zinc-900">
                 <div class="">
-                    <div class=""><!-- Sección para todo el contenido -->
-                        <div class=""><!-- Sección para el avatar -->
-                            <img class="" src="./origin/multimedia/img/avatar.jpg" title="Sooma" alt="Sooma">
+                    <div class="flex flex-col md:flex-row"><!-- Sección para todo el contenido -->
+                        <div class="md:relative md:w-4/12 md:p-4"><!-- Sección para el avatar -->
+                            <img class="mx-auto my-12 w-80 h-80 rounded-circle md:sticky md:top-16 md:w-52 md:h-52 lg:w-72 lg:h-72" src="./origin/multimedia/img/avatar.jpg" title="Sooma" alt="Sooma">
                         </div>
-                        <div class=""><!-- Seccion para el contenido de la segunda columna de la sección -->
+                        <div class="w-3/4 mx-auto md:w-8/12 md:p-6"><!-- Seccion para el contenido de la segunda columna de la sección -->
                             <div class="">
-                                <h1 class="">Sobre mí.</h1>
-                                <p class="">¡Hola! soy un desarrollador web especializado en Frontend, 
+                                <h1 class="text-center text-5xl font-bold mb-12 dark:text-slate-50">Sobre mí.</h1>
+                                <p class="mb-5 text-lg dark:text-slate-50">¡Hola! soy un desarrollador web especializado en Frontend, 
                                     estoy en constante aprendizaje, me encanta estudiar y ampliar lo que sé,
                                     creo firmemente en que cada día se debe aprender algo nuevo, por más pequeño que sea.
                                 </p>
-                                <p class="">Entre mis pasatiempos y gustos están el ejercicio, las artes marciales,
+                                <p class="mb-5 text-lg dark:text-slate-50">Entre mis pasatiempos y gustos están el ejercicio, las artes marciales,
                                     el arte, personalmente me gusta escribir y es por eso que tengo varios artículos de blog
                                     escritos, me gusta mucho explorar mi creatividad creando cosas ya sea programando una idea
                                     que tuve o diseñándola en Figma.
                                 </p>
-                                <p class="">Mis grandes sueños son:</p>
-                                <ul class="">
-                                    <li class="">Trabajar en una modalidad remota con un equipo distribuido por
+                                <p class="mb-5 text-lg dark:text-slate-50">Mis grandes sueños son:</p>
+                                <ul class="list-disc list-inside">
+                                    <li class="mb-1 text-lg dark:text-slate-50">Trabajar en una modalidad remota con un equipo distribuido por
                                         todo el mundo para poder conocer personas de todos los lugares y poder aprender un poco de ellos.
                                     </li>
-                                    <li class="">Lograr vivir en Canadá el cual es mi país soñado.</li>
+                                    <li class="mb-1 text-lg dark:text-slate-50">Lograr vivir en Canadá el cual es mi país soñado.</li>
                                 </ul>
                             </div>
-                            <div class="">
-                                <h2 class="">Educación.</h2>
-                                <p class="">Estudié en el <a class="section__a" href="https://www.cdmadero.tecnm.mx" target="_blank">Instituto Tecnológico de Ciudad Madero</a> donde estoy por recibirme como ingeniero en sistemas computacionales.</p>
-                                <p class="">Como autodidacta he hecho una serie de cursos, prácticas e investigaciones.</p>
-                            </div>
-                            <div class="">
-                                <h2 class="">Habilidades.</h2>
-                                <p class="">Manejo una gran serie de herramientas pero estas son las que 
-                                    considero más importantes y las que mejor domino.
-                                </p>
-                                <p class="">Lenguajes y lenguajes de programación:</p>
-                                <ul class="">
-                                    <li class="">
-                                        <img class="" src="./origin/multimedia/svg/html.svg" title="HTML" alt="HTML">
-                                        <span class="">HTML</span>
-                                    </li>
-                                    <li class="">
-                                        <img class="" src="./origin/multimedia/svg/css.svg" title="CSS" alt="CSS">
-                                        <span class="">CSS</span>
-                                    </li>
-                                    <li class="">
-                                        <img class="" src="./origin/multimedia/svg/javascript.svg" title="JavaScript" alt="JavaScript">
-                                        <span class="">JavaScript</span>
-                                    </li>
-                                    <li class="">
-                                        <img class="" src="./origin/multimedia/svg/mysql.svg" title="SQL" alt="SQL">
-                                        <span class="">SQL</span>
-                                    </li>
-                                </ul>
-                                <p class="">Frameworks y librerías:</p>
-                                <ul class="">
-                                    <li class="">
-                                        <img class="" src="./origin/multimedia/svg/react.svg" title="React.JS" alt="React.JS">
-                                        <span class="">React.JS</span>
-                                    </li>
-                                    <li class="">
-                                        <img class="" src="./origin/multimedia/svg/tailwindcss.svg" title="Tailwind" alt="Tailwind">
-                                        <span class="">Tailwind CSS</span>
-                                    </li>
-                                    <li class="">
-                                        <img class="" src="./origin/multimedia/svg/Express.js_light_dark/Express.js_dark.svg" title="Express.JS" alt="Express.JS">
-                                        <span class="">Express.JS</span>
-                                    </li>
-                                </ul>
-                                <p class="">Tecnologías y herramientas</p>
-                                <ul class="">
-                                    <li class="">
-                                        <img class="" src="./origin/multimedia/svg/nodejs.svg" title="Node.JS" alt="Node.JS">
-                                        <span class="">Node.JS</span>
-                                    </li>
-                                    <li class="">
-                                        <img class="" src="./origin/multimedia/svg/git.svg" title="Git" alt="Git">
-                                        <span class="">Git/Github</span>
-                                    </li>
-                                    <li class="">
-                                        <img class="" src="./origin/multimedia/svg/figma.svg" title="Figma" alt="Figma">
-                                        <span class="">Figma</span>
-                                    </li>
-                                </ul>
+                            <h2 class="text-3xl font-bold mt-8 mb-2 dark:text-slate-50">Educación.</h2>
+                            <p class="mb-5 text-lg dark:text-slate-50">Estudié en el <a class="font-bold" href="https://www.cdmadero.tecnm.mx" target="_blank">Instituto Tecnológico de Ciudad Madero</a> donde estoy por recibirme como ingeniero en sistemas computacionales.</p>
+                            <p class="mb-5 text-lg dark:text-slate-50">Como autodidacta he hecho una serie de cursos, prácticas e investigaciones.</p>
+                            <h2 class="text-3xl font-bold mt-8 mb-2 dark:text-slate-50">Habilidades.</h2>
+                            <p class="mb-5 text-lg dark:text-slate-50">Manejo una gran serie de herramientas pero estas son las que 
+                                considero más importantes y las que mejor domino.
+                            </p>
+                            <div class="grid-layout">
+                                <div>
+                                    <p class="mb-5 text-lg dark:text-slate-50">Lenguajes/lenguajes de programación:</p>
+                                    <ul class="flex flex-col gap-4">
+                                        <li class="mb-1 text-lg flex items-center gap-4 dark:text-slate-50">
+                                            <img class="w-14 h-14" src="./origin/multimedia/svg/html.svg" title="HTML" alt="HTML">
+                                            <span class="">HTML</span>
+                                        </li>
+                                        <li class="mb-1 text-lg flex items-center gap-4 dark:text-slate-50">
+                                            <img class="w-14 h-14" src="./origin/multimedia/svg/css.svg" title="CSS" alt="CSS">
+                                            <span class="">CSS</span>
+                                        </li>
+                                        <li class="mb-1 text-lg flex items-center gap-4 dark:text-slate-50">
+                                            <img class="w-14 h-14" src="./origin/multimedia/svg/javascript.svg" title="JavaScript" alt="JavaScript">
+                                            <span class="">JavaScript</span>
+                                        </li>
+                                        <li class="mb-1 text-lg flex items-center gap-4 dark:text-slate-50">
+                                            <img class="w-14 h-14" src="./origin/multimedia/svg/typescript.svg" title="TypeScript" alt="TypeScript">
+                                            <span class="">TypeScript</span>
+                                        </li>
+                                        <li class="mb-1 text-lg flex items-center gap-4 dark:text-slate-50">
+                                            <img class="w-14 h-14" src="./origin/multimedia/svg/mysql.svg" title="SQL" alt="SQL">
+                                            <span class="">SQL</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p class="mb-5 text-lg dark:text-slate-50">Frameworks y librerías:</p>
+                                    <ul class="flex flex-col gap-4">
+                                        <li class="mb-1 text-lg flex items-center gap-4 dark:text-slate-50">
+                                            <img class="w-14 h-14" src="./origin/multimedia/svg/react.svg" title="React.JS" alt="React.JS">
+                                            <span class="">React.JS</span>
+                                        </li>
+                                        <li class="mb-1 text-lg flex items-center gap-4 dark:text-slate-50">
+                                            <img class="w-14 h-14" src="./origin/multimedia/svg/tailwindcss.svg" title="Tailwind" alt="Tailwind">
+                                            <span class="">Tailwind CSS</span>
+                                        </li>
+                                        <li class="mb-1 text-lg flex items-center gap-4 dark:text-slate-50">
+                                            <img class="express w-14 h-14" title="Express.JS" alt="Express.JS">
+                                            <span class="">Express.JS</span>
+                                        </li>
+                                        <li class="mb-1 text-lg flex items-center gap-4 dark:text-slate-50">
+                                            <img class="w-14 h-14" src="./origin/multimedia/svg/nextjs.svg" title="Nexts.JS" alt="Next.JS">
+                                            <span class="">Next.JS</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p class="mb-5 text-lg dark:text-slate-50">Tecnologías y herramientas</p>
+                                    <ul class="flex flex-col gap-4">
+                                        <li class="mb-1 text-lg flex items-center gap-4 dark:text-slate-50">
+                                            <img class="w-14 h-14" src="./origin/multimedia/svg/nodejs.svg" title="Node.JS" alt="Node.JS">
+                                            <span class="">Node.JS</span>
+                                        </li>
+                                        <li class="mb-1 text-lg flex items-center gap-4 dark:text-slate-50">
+                                            <img class="w-14 h-14" src="./origin/multimedia/svg/git.svg" title="Git" alt="Git">
+                                            <span class="">Git/Github</span>
+                                        </li>
+                                        <li class="mb-1 text-lg flex items-center gap-4 dark:text-slate-50">
+                                            <img class="w-14 h-14" src="./origin/multimedia/svg/figma.svg" title="Figma" alt="Figma">
+                                            <span class="">Figma</span>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="">
-                        <div class="">
-                            <p class="">¡Persigue tus sueños!</p>
-                            <p class="">La creatividad y pasión crean grandes cosas.</p>
-                        </div>
+                    <div class="pt-20">
+                        <p class="font-jost text-3xl font-bold text-center mb-2 dark:text-slate-50">Persigue tus sueños</p>
+                        <p class="font-jost text-3xl font-bold text-center mt-8 dark:text-slate-50">La creatividad y pasión crean grandes cosas.</p>
                     </div>
                 </div>
             </main>
-            <footer class="bg-neutral-950 w-full p-6 flex flex-col gap-4">
+            <footer class="bg-neutral-900 w-full p-6 flex flex-col gap-4 border-t border-t-neutral-600">
                 <nav class="flex justify-center gap-24">
-                    <a class="w-10 h-10 flex justify-center items-center rounded-circle hover:bg-slate-900" href="https://www.instagram.com/soomadev">
+                    <a class="w-10 h-10 flex justify-center items-center rounded-circle hover:bg-neutral-800 transition-colors" href="https://www.instagram.com/soomadev" target="_blank">
                         <img class="w-6" src="./origin/multimedia/svg/Instagram_dark.svg" title="Instagram" alt="Instagram">
                     </a>
-                    <a class="w-10 h-10 flex justify-center items-center rounded-circle hover:bg-slate-900" href="mailto:ramirezmendoza482@gmail.com">
+                    <a class="w-10 h-10 flex justify-center items-center rounded-circle hover:bg-neutral-800 transition-colors" href="mailto:ramirezmendoza482@gmail.com" target="_blank">
                         <img class="w-6" src="./origin/multimedia/svg/gmail.svg" title="Gmail" alt="Gmail">
                     </a>
-                    <a class="w-10 h-10 flex justify-center items-center rounded-circle hover:bg-slate-900" href="https://github.com/JSooma">
+                    <a class="w-10 h-10 flex justify-center items-center rounded-circle hover:bg-neutral-800 transition-colors" href="https://github.com/andresmendoza482" target="_blank">
                         <img class="w-6" src="./origin/multimedia/svg/github.svg" title="Github" alt="Github">
                     </a>
                 </nav>
-                <p class="text-slate-50 text-center">Created by Sooma.</p>
+                <p class="text-slate-50 text-center division">Created by Sooma.</p>
             </footer>
         </div>
     </body>

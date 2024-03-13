@@ -18,28 +18,33 @@
         <!-- Link tags -->
         <link rel="stylesheet" type="text/css" href="./origin/css/styles.css">
         <link rel="canonical" href="">
-        <link rel="icon" href="">
-        <link rel="apple-touch-icon" href="">
+        <link rel="icon" href="./origin/multimedia/img/favicon.png">
+        <link rel="apple-touch-icon" href="./origin/multimedia/img/favicon.png">
         <script src="./origin/js/index.js" type="module" defer></script>
         <title>Inglés</title>
     </head>
     <body>
         <noscript><h2>Es necesario que tenga habilitado JavaScript en tu navegador para acceder a esta página</h2></noscript>
         <div class="root">
-            <header class="bg-neutral-950 p-4 w-full flex justify-between items-center">
-                <a class="" href="#">
-                    <img class="" src="" title="Logo" alt="Logo">
+            <header class="header fixed top-0 left-0 z-30 bg-neutral-900 py-1 px-4 w-full flex justify-between items-center border-b border-b-neutral-600 md:static">
+                <a class="header__home" href="./index.html">
+                    <img class="header__logo w-20 h-20 md:w-16 md:h-16" src="./origin/multimedia/img/favicon.png" title="Sooma" alt="Sooma">
                 </a>
-                <nav class="flex justify-center items-center gap-4">
-                    <a class="text-slate-50" href="#">Sobre mí</a>
-                    <a class="text-slate-50" href="./experiencia.html">Experiencia</a>
-                    <a class="text-slate-50" href="#">Blog</a>
-                    <button class="w-10 h-10 flex justify-center items-center rounded-circle hover:bg-neutral-900">
-                        <img class="w-6" src="./origin/multimedia/svg/moon.svg" title="Dark mode" alt="Dark mode">
+                <nav class="header__nav bg-neutral-900 fixed top-0 left-0 z-40 w-full h-screen flex flex-col justify-center items-center translate-x-full transition-transform md:relative md:flex-row md:gap-4 md:w-auto md:h-auto md:translate-x-0">
+                    <a class="header__a text-slate-50 p-8 text-4xl text-center w-full md:text-base md:p-0 md:w-auto" href="./sobre-mi.html">Sobre mí</a>
+                    <a class="header__a text-slate-50 p-8 text-4xl text-center w-full md:text-base md:p-0 md:w-auto" href="./experiencia.html">Experiencia</a>
+                    <a class="header__a text-slate-50 p-8 text-4xl text-center w-full md:text-base md:p-0 md:w-auto" href="./blog.html">Blog</a>
+                    <button class="header__btn-dark p-8 w-full flex justify-center items-center md:w-10 md:h-10 md:p-0 md:hover:bg-neutral-800">
+                        <img class="header__btn-icon w-8 md:w-6" title="Dark mode" alt="Dark mode">
                     </button>
                 </nav>
+                <button class="header__btn-hamburguer relative z-50 md:hidden hamburger hamburger--squeeze" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>
             </header>
-            <main class="py-20 bg-slate-50 dark:bg-neutral-950">
+            <main class="pt-36 pb-20 bg-slate-50 dark:bg-zinc-900 md:py-20">
                 <article class="w-3/4 mx-auto md:w-8/12">
                     <h1 class="text-center text-5xl font-bold mb-12 text-neutral-950 dark:text-slate-50">Inglés.</h1>
                     <img class="mx-auto w-72 h-64 rounded-xl" src="./origin/multimedia/img/ingles.jpg" title="Inglés" alt="Inglés">
@@ -51,7 +56,7 @@
                     </p>
                     <p class="mb-5 text-lg text-neutral-950 dark:text-slate-50">Orientaré este articulo al mundo de la programación y el trabajo remoto.
                     </p>
-                    <p class="mb-5 text-lg text-neutral-950 dark:text-slate-50">Alguna vez escuchaste la pregunta "Cuál es el mejor lenguaje de programación?", 
+                    <p class="mb-5 text-lg text-neutral-950 dark:text-slate-50">Alguna vez escuchaste la pregunta "¿Cuál es el mejor lenguaje de programación?", 
                         estoy muy seguro de que sí, y posiblemente tendrás tu propia opinión, tal vez sea Python, 
                         Java (no creo), JavaScript o cualquier otro lenguaje de alto nivel, pero una vez leí de una 
                         persona un comentario donde él decía "El mejor lenguaje de programación es el inglés, es el 
@@ -60,7 +65,7 @@
                     </p>
                     <p class="mb-5 text-lg text-neutral-950 dark:text-slate-50">Es verdad cuando dicen que el lenguaje de la programación es el inglés, 
                         solo piénsalo, las documentaciones oficiales, los propios lenguajes, los mejores puestos de 
-                        trabajo, la oportunidad de trabajar de manera remota, toda la información que hay al respecto 
+                        trabajo, la oportunidad de trabajar de manera remota, toda la información que hay al respecto, 
                         todo está en este idioma.
                     </p>
                     <p class="mb-5 text-lg text-neutral-950 dark:text-slate-50">Si eres un estudiante con tiempo antes de graduarte te recomiendo ampliamente 
@@ -91,19 +96,19 @@
                     </div>
                 </article>
             </main>
-            <footer class="bg-neutral-950 w-full p-6 flex flex-col gap-4">
+            <footer class="bg-neutral-900 w-full p-6 flex flex-col gap-4 border-t border-t-neutral-600">
                 <nav class="flex justify-center gap-24">
-                    <a class="w-10 h-10 flex justify-center items-center rounded-circle hover:bg-neutral-900" href="https://www.instagram.com/soomadev" target="_blank">
+                    <a class="w-10 h-10 flex justify-center items-center rounded-circle hover:bg-neutral-800 transition-colors" href="https://www.instagram.com/soomadev" target="_blank">
                         <img class="w-6" src="./origin/multimedia/svg/Instagram_dark.svg" title="Instagram" alt="Instagram">
                     </a>
-                    <a class="w-10 h-10 flex justify-center items-center rounded-circle hover:bg-neutral-900" href="mailto:ramirezmendoza482@gmail.com" target="_blank">
+                    <a class="w-10 h-10 flex justify-center items-center rounded-circle hover:bg-neutral-800 transition-colors" href="mailto:ramirezmendoza482@gmail.com" target="_blank">
                         <img class="w-6" src="./origin/multimedia/svg/gmail.svg" title="Gmail" alt="Gmail">
                     </a>
-                    <a class="w-10 h-10 flex justify-center items-center rounded-circle hover:bg-neutral-900" href="https://github.com/JSooma" target="_blank">
+                    <a class="w-10 h-10 flex justify-center items-center rounded-circle hover:bg-neutral-800 transition-colors" href="https://github.com/andresmendoza482" target="_blank">
                         <img class="w-6" src="./origin/multimedia/svg/github.svg" title="Github" alt="Github">
                     </a>
                 </nav>
-                <p class="text-slate-50 text-center">Created by Sooma.</p>
+                <p class="text-slate-50 text-center division">Created by Sooma.</p>
             </footer>
         </div>
     </body>

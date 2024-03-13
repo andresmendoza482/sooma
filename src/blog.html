@@ -4,103 +4,129 @@
         <!-- Meta tags -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="autor" content="">
-        <meta name="copyright" content="">
+        <meta name="autor" content="Sooma">
+        <meta name="copyright" content="Created by Sooma">
         <meta name="description" content="">
         <meta name="keywords" content="">
-        <meta name="theme-color" content="">
+        <meta name="theme-color" content="#111">
         <!-- Open Graph protocol -->
-        <meta property="og:title" content="">
+        <meta property="og:title" content="Blog">
         <meta property="og:description" content="">
-        <meta property="og:type" content="">
+        <meta property="og:type" content="website">
         <meta property="og:url" content="">
         <meta property="og:img" content="">
         <!-- Link tags -->
         <link rel="stylesheet" type="text/css" href="./origin/css/styles.css">
         <link rel="canonical" href="">
-        <link rel="icon" href="">
-        <link rel="apple-touch-icon" href="">
+        <link rel="icon" href="./origin/multimedia/img/favicon.png">
+        <link rel="apple-touch-icon" href="./origin/multimedia/img/favicon.png">
         <script src="./origin/js/index.js" type="module" defer></script>
         <title>Blog</title>
     </head>
     <body>
         <noscript><h2></h2></noscript>
         <div class="root">
-            <header class="bg-neutral-950 p-4 w-full flex justify-between items-center">
-                <a class="" href="#">
-                    <img class="" src="" title="Logo" alt="Logo">
+            <header class="header fixed top-0 left-0 z-30 bg-neutral-900 py-1 px-4 w-full flex justify-between items-center border-b border-b-neutral-600 md:static">
+                <a class="header__home" href="./index.html">
+                    <img class="header__logo w-20 h-20 md:w-16 md:h-16" src="./origin/multimedia/img/favicon.png" title="Sooma" alt="Sooma">
                 </a>
-                <nav class="">
-                    <a class="text-slate-50" href="#">Sobre mí</a>
-                    <a class="text-slate-50" href="#">Experiencia</a>
-                    <a class="text-slate-50" href="#">Blog</a>
-                    <button class="w-10 h-10 flex justify-center items-center rounded-circle hover:bg-slate-900">
-                        <img class="w-6" src="./origin/multimedia/svg/moon.svg" title="Dark mode" alt="Dark mode">
+                <nav class="header__nav bg-neutral-900 fixed top-0 left-0 z-40 w-full h-screen flex flex-col justify-center items-center translate-x-full transition-transform md:relative md:flex-row md:gap-4 md:w-auto md:h-auto md:translate-x-0">
+                    <a class="header__a text-slate-50 p-8 text-4xl text-center w-full md:text-base md:p-0 md:w-auto" href="./sobre-mi.html">Sobre mí</a>
+                    <a class="header__a text-slate-50 p-8 text-4xl text-center w-full md:text-base md:p-0 md:w-auto" href="./experiencia.html">Experiencia</a>
+                    <a class="header__a text-slate-50 p-8 text-4xl text-center w-full md:text-base md:p-0 md:w-auto" href="./blog.html">Blog</a>
+                    <button class="header__btn-dark p-8 w-full flex justify-center items-center md:w-10 md:h-10 md:p-0 md:hover:bg-neutral-800">
+                        <img class="header__btn-icon w-8 md:w-6" title="Dark mode" alt="Dark mode">
                     </button>
                 </nav>
+                <button class="header__btn-hamburguer relative z-50 md:hidden hamburger hamburger--squeeze" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>
             </header>
-            <main class="">
-                <div class="">
-                    <div class="">
-                        <h1 class="">Blog.</h1>
-                        <p class="">Desde hace mucho tiempo tengo el habito de escribir y estos son 
-                            algunos de los temas los cuales he querido hablar o compartir un poco de lo que sé, 
-                            ya sean temas sobre la programación, la vida o cosas que simplemente creé un día de 
-                            reflexión. 
-                        </p>
-                    </div>
-                    <div class="">
-                        <h2 class="">Programación.</h2>
-                        <div class="">
-                            <figure class="">
-                                <a class="" href="./ingles.html">
-                                    <img class="" src="./origin/multimedia/img/ingles.jpg" title="Inglés" alt="Inglés">
-                                    <figcaption class="">Inglés</figcaption>
-                                </a>
-                                <div class="">
-                                    <p class="">El mejor lenguaje de programación</p>
+            <main class="pt-36 pb-20 bg-slate-50 dark:bg-zinc-900 md:py-20">
+                <div class="w-3/4 mx-auto md:w-8/12">
+                    <h1 class="text-center text-5xl font-bold mb-12 text-neutral-900 dark:text-slate-50">Blog.</h1>
+                    <p class="mb-12 text-lg text-neutral-900 dark:text-slate-50">Desde hace mucho tiempo tengo el habito de escribir y estos son 
+                        algunos de los temas los cuales he querido hablar o compartir un poco de lo que sé, 
+                        ya sean temas relacionados a la programación, la vida o cosas que simplemente creé un día de 
+                        reflexión.
+                    </p>
+                    <h2 class="text-3xl font-bold mt-8 mb-2 text-neutral-900 dark:text-slate-50">Programación.</h2>
+                    <div class="mb-12 grid-layout">
+                        <figure class="mx-auto relative cursor-pointer">
+                            <a class="" href="./fullstack.html">
+                                <img class="w-72 h-64 object-cover rounded-xl" src="./origin/multimedia/img/fullstack.png" title="Fullstack" alt="Fullstack">
+                                <figcaption class="font-bold text-center text-neutral-900 dark:text-slate-50">Fullstack</figcaption>
+                                <div class="p-6 bg-accent flex justify-center items-center absolute top-0 left-0 w-full h-full rounded-xl opacity-0 hover:opacity-95 transition-opacity">
+                                    <p class="text-center text-lg text-slate-50">El especialista en nada</p>
                                 </div>
-                            </figure>
-                        </div>
+                            </a>
+                        </figure>
+                        <figure class="mx-auto relative cursor-pointer">
+                            <a class="" href="./ingles.html">
+                                <img class="w-72 h-64 rounded-xl" src="./origin/multimedia/img/ingles.jpg" title="Inglés" alt="Inglés">
+                                <figcaption class="font-bold text-center text-neutral-900 dark:text-slate-50">Inglés</figcaption>
+                                <div class="p-6 bg-accent flex justify-center items-center absolute top-0 left-0 w-full h-full rounded-xl opacity-0 hover:opacity-95 transition-opacity">
+                                    <p class="text-center text-lg  text-slate-50">El mejor lenguaje de programación</p>
+                                </div>
+                            </a>
+                        </figure>
+                        <figure class="mx-auto relative cursor-pointer">
+                            <a class="" href="./suficiente.html">
+                                <img class="w-72 h-64 rounded-xl" src="./origin/multimedia/img/suficiente.jpg" title="Suficiente" alt="Suficiente">
+                                <figcaption class="font-bold text-center text-neutral-900 dark:text-slate-50">Suficiente</figcaption>
+                                <div class="p-6 bg-accent flex justify-center items-center absolute top-0 left-0 w-full h-full rounded-xl opacity-0 hover:opacity-95 transition-opacity">
+                                    <p class="text-center text-lg text-slate-50">Sobresalir en lo que elijes</p>
+                                </div>
+                            </a>
+                        </figure>
                     </div>
-                    <div class="">
-                        <h2 class="">Vida.</h2>
-                        <div class="">
-                            <figure class="">
-                                <a class="" href="./homenaje.html">
-                                    <img class="" src="./origin/multimedia/img/homage.jpg" title="Homenaje" alt="Homenaje">
-                                    <figcaption class="">Homenaje</figcaption>
-                                    <div class="">
-                                        <p class="">El camino recorrido</p>
-                                    </div>
-                                </a>
-                            </figure>
-                            <figure class="">
-                                <a class="" href="./un-nuevo-comienzo.html">
-                                    <img class="" src="./origin/multimedia/img/comienzo.png" title="Un nuevo comienzo" alt="Un nuevo comienzo">
-                                    <figcaption class="">Un nuevo comienzo</figcaption>
-                                    <div class="">
-                                        <p class="">Lo que hubiera querido saber al inicial el grado superior</p>
-                                    </div>
-                                </a>
-                            </figure>
-                        </div>
+                    <h2 class="text-3xl font-bold mt-8 mb-2 text-neutral-900 dark:text-slate-50">Vida.</h2>
+                    <div class="grid-layout">
+                        <figure class="mx-auto relative cursor-pointer">
+                            <a class="" href="./homenaje.html">
+                                <img class="w-72 h-64 object-cover rounded-xl" src="./origin/multimedia/img/homage.jpg" title="Homenaje" alt="Homenaje">
+                                <figcaption class="font-bold text-center text-neutral-900 dark:text-slate-50">Homenaje</figcaption>
+                                <div class="p-6 bg-accent flex justify-center items-center absolute top-0 left-0 w-full h-full rounded-xl opacity-0 hover:opacity-95 transition-opacity">
+                                    <p class="text-center text-lg text-slate-50">El camino recorrido</p>
+                                </div>
+                            </a>
+                        </figure>
+                        <figure class="mx-auto relative cursor-pointer">
+                            <a class="" href="./un-nuevo-comienzo.html">
+                                <img class="w-72 h-64 object-cover rounded-xl" src="./origin/multimedia/img/comienzo.png" title="Un nuevo comienzo" alt="Un nuevo comienzo">
+                                <figcaption class="font-bold text-center text-neutral-900 dark:text-slate-50">Un nuevo comienzo</figcaption>
+                                <div class="p-6 bg-accent flex justify-center items-center absolute top-0 left-0 w-full h-full rounded-xl opacity-0 hover:opacity-95 transition-opacity">
+                                    <p class="text-center text-lg text-slate-50">Lo que hubiera querido saber al inicial el grado superior</p>
+                                </div>
+                            </a>
+                        </figure>
+                        <figure class="mx-auto relative cursor-pointer">
+                            <a class="" href="./akira-toriyama.html">
+                                <img class="w-72 h-64 object-cover rounded-xl" src="./origin/multimedia/img/akira-toriyama.jpg" title="Homenaje" alt="Homenaje">
+                                <figcaption class="font-bold text-center text-neutral-900 dark:text-slate-50">Akira Toriyama</figcaption>
+                                <div class="p-6 bg-accent flex justify-center items-center absolute top-0 left-0 w-full h-full rounded-xl opacity-0 hover:opacity-95 transition-opacity">
+                                    <p class="text-center text-lg text-slate-50">Maestro de maestros</p>
+                                </div>
+                            </a>
+                        </figure>
                     </div>
                 </div>
             </main>
-            <footer class="bg-neutral-950 w-full p-6 flex flex-col gap-4">
+            <footer class="bg-neutral-900 w-full p-6 flex flex-col gap-4 border-t border-t-neutral-600">
                 <nav class="flex justify-center gap-24">
-                    <a class="w-10 h-10 flex justify-center items-center rounded-circle hover:bg-slate-900" href="https://www.instagram.com/soomadev">
+                    <a class="w-10 h-10 flex justify-center items-center rounded-circle hover:bg-neutral-800 transition-colors" href="https://www.instagram.com/soomadev" target="_blank">
                         <img class="w-6" src="./origin/multimedia/svg/Instagram_dark.svg" title="Instagram" alt="Instagram">
                     </a>
-                    <a class="w-10 h-10 flex justify-center items-center rounded-circle hover:bg-slate-900" href="mailto:ramirezmendoza482@gmail.com">
+                    <a class="w-10 h-10 flex justify-center items-center rounded-circle hover:bg-neutral-800 transition-colors" href="mailto:ramirezmendoza482@gmail.com" target="_blank">
                         <img class="w-6" src="./origin/multimedia/svg/gmail.svg" title="Gmail" alt="Gmail">
                     </a>
-                    <a class="w-10 h-10 flex justify-center items-center rounded-circle hover:bg-slate-900" href="https://github.com/JSooma">
+                    <a class="w-10 h-10 flex justify-center items-center rounded-circle hover:bg-neutral-800 transition-colors" href="https://github.com/andresmendoza482" target="_blank">
                         <img class="w-6" src="./origin/multimedia/svg/github.svg" title="Github" alt="Github">
                     </a>
                 </nav>
-                <p class="text-slate-50 text-center">Created by Sooma.</p>
+                <p class="text-slate-50 text-center division">Created by Sooma.</p>
             </footer>
         </div>
     </body>

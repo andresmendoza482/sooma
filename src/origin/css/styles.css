@@ -7,7 +7,6 @@ https://utopia.fyi
 @tailwind components;
 @tailwind utilities;
 
-
 /*************************** Styles ***************************/
 @font-face { /* Headers */
     font-family: "Rubik";
@@ -29,19 +28,150 @@ h1, h2 {
 
 p, a, time, span, li {
     font-family: "Jost", "Tahoma";
-}
+} 
 
 .rounded-circle {
     border-radius: 50%;
 }
 
+.bg-accent {
+    background-color: #4393ac;
+}
+
+/* Clase que cambia de color la sección del nav en la que nos encontremos. */
+.a-location {
+    color: #4393ac;
+}
+
+.grid-layout {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+
+p a {
+    transition: color 0.3s ease-in-out;
+}
+
+.header__a,
+.header__btn-dark {
+    background-color: #171717;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/*************************** Hover Styles ***************************/
+.header__a:hover,
+.header__btn-dark:hover {
+    background-color: #4393ac;
+} 
+
+p a:hover {
+    color: #4393ac;
+}
+
+/*************************** Psuedo Classes ***************************/
 .division::before {
     content: "";
-    color: #777;
-    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    background-color: #525252;
+    width: 50vw;
+    height: 1px;
 }
 
+/*************************** Hamburguer btn library ***************************/
+/* https://jonsuh.com/hamburgers/
+by Jonathan Suh */
+.hamburger {
+    padding: 15px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible; }
+    .hamburger:hover {
+      opacity: 0.7; }
+    .hamburger.is-active:hover {
+      opacity: 0.7; }
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner::before,
+    .hamburger.is-active .hamburger-inner::after {
+      background-color: #f2f2f2; }
+  
+  .hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative; }
+  
+  .hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px; }
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+      width: 40px;
+      height: 4px;
+      background-color: #f2f2f2;
+      border-radius: 4px;
+      position: absolute;
+      transition-property: transform;
+      transition-duration: 0.15s;
+      transition-timing-function: ease; }
+    .hamburger-inner::before, .hamburger-inner::after {
+      content: "";
+      display: block; }
+    .hamburger-inner::before {
+      top: -10px; }
+    .hamburger-inner::after {
+      bottom: -10px; }
+  
+/*************************** Hamburguer btn library squeeze styles ***************************/
+.hamburger--squeeze .hamburger-inner {
+    transition-duration: 0.075s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+    .hamburger--squeeze .hamburger-inner::before {
+      transition: top 0.075s 0.12s ease, opacity 0.075s ease; }
+    .hamburger--squeeze .hamburger-inner::after {
+      transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  
+  .hamburger--squeeze.is-active .hamburger-inner {
+    transform: rotate(45deg);
+    transition-delay: 0.12s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+    .hamburger--squeeze.is-active .hamburger-inner::before {
+      top: 0;
+      opacity: 0;
+      transition: top 0.075s ease, opacity 0.075s 0.12s ease; }
+    .hamburger--squeeze.is-active .hamburger-inner::after {
+      bottom: 0;
+      transform: rotate(-90deg);
+      transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
+      
+/*************************** Media queries ***************************/
+@media screen and (min-width: 48em) {
+    .header__logo {
+        transform: rotate(0deg);
+        transition: transform 0.3s ease-in-out;
+    }
 
-.jijija {
-    background-color: #111;
-}
+    .header__btn-dark {
+        border-radius: 50%;
+    }
+    
+    .header__a:hover {
+        background-color: transparent;
+    } 
+
+    .header__logo:hover {
+        transform: rotate(360deg);
+    }
+}      
